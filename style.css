@@ -1,0 +1,49 @@
+body{
+  background-image: url('homepage.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif
+}
+
+a:hover {
+            color: #FF5733; /* Change link color on hover */
+        }
+
+header{
+  border: 4px solid navy
+
+}
+
+#links{
+  border: 3px solid navy
+
+}
+#albums{
+  border: 3px solid navy
+
+}
+
+#favorite-quote{
+  display: flex;
+    justify-content: center;
+    align-items: center
+}
+#job-history{
+  border: 3px solid navy
+
+}
+
+table{
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: 10px;
+  text-align:left;
+  border: 1px solid navy
+}
+tr:nth-child(even){
+  background-color: lightblue
+}
