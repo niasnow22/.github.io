@@ -1,0 +1,128 @@
+body{
+  background-image: url('background.png');
+  background-repeat: repeat;
+  background-size: cover;
+  margin: 0;
+  padding:0;
+}
+
+.header{
+  text-align: center;
+  font-size: 24pt;
+  font-family: Tahoma;
+}
+
+.main-container{
+  width: 800px;
+  margin: 0 auto;
+  border: 4px solid gray;
+  padding: 20px;
+  height: 800px;
+}
+
+.top-left {
+    width: 550px;
+    float: left;
+    margin: 0 auto;
+}
+
+.review {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.rotten-background {
+    height: 83px;
+    float:right;
+    width: 425px;
+    padding-bottom: : 8;
+}
+
+.rotten-banner {
+    height: 83px;
+    float: left;
+    padding-bottom: 8;
+}
+.ratings{
+  overflow: hidden;
+}
+
+.overall-rating{
+  font-size: 48pt;
+  color: red;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+}
+
+.review-count{
+  font-size: 8pt;
+  color: white;
+  margin: 0;
+  position: absolute;
+  padding-left: 130px;
+  padding-top: 45px;
+}
+
+.quote-box{
+  width: auto;
+  margin: 0 auto;
+  border: 4px solid gray;
+  padding: 20px;
+  height: auto;
+  background-color: #E1D697;
+  font-weight: 500;
+  font-size: 8pt;
+}
+
+.review-icon {
+    float: left;
+    margin-right: 5px;
+}
+
+.reviewer-info{
+  font-size: 8pt;
+}
+
+.reviewer-icon {
+    float: left;
+    margin-right: 5px;
+}
+
+.review-column {
+    column-count: 2;
+}
+
+.overview-section {
+    width: 250px;
+    margin-left: 10px; /* Add space between the edge of the section and text */
+    background-color: #A2B964;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 8pt;
+    float:right;
+}
+
+.overview-content dl {
+    margin: 0; /* Remove default margin */
+}
+
+.overview-content dt {
+    font-weight: bold;
+    margin-top: 1em; /* Vertical separation between terms */
+}
+
+.overview-content p {
+    margin: 1em 0; /* Add space above and below the link */
+}
+
+/* Style the link */
+.overview-content a {
+    color: #0000FF; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.overview-content a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
