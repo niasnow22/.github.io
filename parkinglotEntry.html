@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .input-group label {
+            width: 100px;
+            padding: 10px;
+        }
+
+        .input-group input {
+            flex: 1;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0099cc;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0099cc;
+            color: #fff;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A Magnificent Parking Lot</h1>
+        <div class="input-group">
+            <label for="owner">Owner:</label>
+            <input type="text" id="owner" placeholder="Owner Name">
+        </div>
+        <div class="input-group">
+            <label for="car">Car:</label>
+            <input type="text" id="car" placeholder="Car Model">
+        </div>
+        <div class="input-group">
+            <label for="plate">License Plate:</label>
+            <input type="text" id="plate" placeholder="License Plate">
+        </div>
+        <div class="input-group">
+            <label for="entry">Entry Date:</label>
+            <input type="date" id="entry">
+        </div>
+        <div class="input-group">
+            <label for="exit">Exit Date:</label>
+            <input type="date" id="exit">
+        </div>
+        <button>Add Car</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Owner</th>
+                    <th>Car</th>
+                    <th>License Plate</th>
+                    <th>Entry Date</th>
+                    <th>Exit Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample row -->
+                <tr>
+                    <td>Henry Louis</td>
+                    <td>Ferrari</td>
+                    <td>CSC4370</td>
+                    <td>09/18/2019</td>
+                   
+                    <td>09/20/2019</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Shota Osada</td>
+                    <td>BMW</td>
+                    <td>SOB2342</td>
+                    <td>09/18/2019</td>
+                   
+                    <td>09/20/2019</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Nia Snow</td>
+                    <td>Mercedes</td>
+                    <td>NSM7495</td>
+                    <td>09/18/2019</td>
+                   
+                    <td>09/20/2019</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Bhumik Patel</td>
+                    <td>Lamborghini</td>
+                    <td>BPL8403</td>
+                    <td>09/18/2019</td>
+                   
+                    <td>09/20/2019</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Viraj Singh</td>
+                    <td>Lexus</td>
+                    <td>VSL5842</td>
+                    <td>09/18/2019</td>
+                   
+                    <td>09/20/2019</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Mike Wazowski</td>
+                    <td>Toyota</td>
+                    <td>MWT4942</td>
+                    <td>09/18/2019</td>
+                   
+                    <td>09/20/2019</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Timmy Turner</td>
+                    <td>Ford</td>
+                    <td>TTF2939</td>
+                    <td>09/18/2019</td>
+                   
+                    <td>09/20/2019</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Gregg Heffley</td>
+                    <td>Honda</td>
+                    <td>GHH6475</td>
+                    <td>09/18/2019</td>
+                   
+                    <td>09/20/2019</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Jimmy Neutron</td>
+                    <td>Mazda</td>
+                    <td>JNM3948</td>
+                    <td>09/18/2019</td>
+                   
+                    <td>09/20/2019</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Tony Stark</td>
+                    <td>Aston Martin</td>
+                    <td>TSA9879</td>
+                    <td>09/18/2019</td>
+                   
+                    <td>09/20/2019</td>
+                    <td><button>Edit</button> <button>Delete</button></td>
+                </tr>
+                <!-- You can add more rows here as needed. -->
+            </tbody>
+        </table>
+        <button><a href="parkingLot.html">Go to Parking</a></button>
+    </div>
+
+    <!-- Note: The "Add Car", "Edit", and "Delete" buttons are currently non-functional. 
+         To make them functional, JavaScript or a backend server-side language would be required. -->
+
+</body>
+</html>

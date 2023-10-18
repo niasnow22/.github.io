@@ -1,0 +1,566 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(parkinglot.jpg);
+}
+
+.header {
+  margin: auto;
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 4px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: absolute;
+  top: -50px;
+  left: -150px;
+  height: 150%;
+  width: 150%;
+  opacity: 0;
+  transition: .5s ease;
+  padding: 0;
+  color: blue;
+  background: #fff;
+	border: 3px solid #d1d1d1;
+	border-radius: 8px;
+}
+
+.information {
+  font-size: 13px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0;
+}
+table,th,td{
+  border: 1px solid #ddd;
+}
+
+.car1{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: parkCar1;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier();
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  top: 25%;
+  left: -10%;
+}
+
+.car1:hover .overlay {
+  opacity: 1;
+}
+
+@keyframes parkCar1 {
+  0% {
+    top: 25%;
+    left: 0%;
+  }
+
+  5% {
+    top: 25%;
+    left: 0%;
+  }
+
+  30% {
+    top: 25%;
+    left: 450px;
+    transform: rotate(0deg);
+    
+  }
+
+  55% {
+    transform: rotate(90deg);
+  }
+
+  70% {
+    top: 500px;
+    left: 450px;
+    transform: rotate(90deg);
+  }
+
+  80% {
+    top: 510px;
+    left: 450px;
+    transform: rotate(0deg);
+  } 
+
+  100% {
+    top: 510px;
+    left: 600px;
+    transform: rotate(0deg);
+  }
+}
+
+
+.car2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: parkCar2;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier();
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  top: 175px;
+  left: -100px;
+}
+
+.car2:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  rotate: 180deg;
+}
+
+@keyframes parkCar2 {
+  0% {
+    top: 175px;
+    left: 0;
+  }
+
+  45% {
+    top: 175px;
+    left: 880px;
+    transform: rotate(0deg);
+  }
+
+  55% {
+    transform: rotate(90deg);
+  }
+
+  70% {
+    top: 500px;
+    left: 880px;
+    transform: rotate(90deg);
+  }
+
+  80% {
+    top: 470px;
+    left: 880px;
+    transform: rotate(180deg);
+  } 
+
+  100% {
+    top: 470px;
+    left: 720px;
+    transform: rotate(180deg);
+  }
+}
+
+.car3 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: parkCar3;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier();
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+  top: 175px;
+  left: -100px;
+}
+
+.car3:hover .overlay {
+  opacity: 1;
+}
+
+@keyframes parkCar3 {
+  0% {
+    top: 175px;
+    left: 0;
+  }
+
+  10% {
+    top: 175px;
+    left: 50px;
+    transform: rotate(0deg);
+  }
+
+  20% {
+    top: 175px;
+    left: 50px;
+    transform: rotate(90deg);
+  }
+
+  75% {
+    top: 740px;
+    left: 50px;
+    transform: rotate(90deg);
+  }
+
+  80% {
+    top: 740px;
+    left: 50px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 740px;
+    left: 200px;
+    transform: rotate(0deg);
+  }
+}
+
+
+
+.car4 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: parkCar4;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier();
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+  top: 175px;
+  left: -100px;
+}
+
+.car4:hover .overlay {
+  opacity: 1;
+}
+
+@keyframes parkCar4 {
+  0% {
+    top: 175px;
+    left: 0;
+  }
+
+  30% {
+    top: 175px;
+    left: 450px;
+    transform: rotate(0deg);
+  }
+
+  40% {
+    top: 175px;
+    left: 450px;
+    transform: rotate(90deg);
+  }
+
+  78% {
+    top: 720px;
+    left: 450px;
+    transform: rotate(90deg);
+  }
+
+  85% {
+    top: 720px;
+    left: 450px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 740px;
+    left: 600px;
+    transform: rotate(0deg);
+  }
+}
+
+.car5 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: parkCar5;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier();
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+  top: 175px;
+  left: -100px;
+}
+
+.car5:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  rotate: 90deg;
+}
+
+@keyframes parkCar5 {
+  0% {
+    top: 175px;
+    left: 0;
+  }
+
+  60% {
+    top: 175px;
+    left: 1120px;
+    transform: rotate(0deg);
+  }
+
+  70% {
+    top: 175px;
+    left: 1120px;
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    top: 60px;
+    left: 1120px;
+    transform: rotate(-90deg);
+  }
+}
+
+.car6 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: parkCar6;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier();
+  animation-fill-mode: forwards;
+  animation-delay: 12s;
+  top: 175px;
+  left: -100px;
+}
+
+.car6:hover .overlay {
+  opacity: 1;
+}
+
+@keyframes parkCar6 {
+  0% {
+    top: 175px;
+    left: 0;
+  }
+
+  45% {
+    top: 175px;
+    left: 880px;
+    transform: rotate(0deg);
+  }
+
+  55% {
+    transform: rotate(90deg);
+  }
+
+  70% {
+    top: 380px;
+    left: 880px;
+    transform: rotate(90deg);
+  }
+
+  80% {
+    top: 380px;
+    left: 880px;
+    transform: rotate(0deg);
+  } 
+
+  100% {
+    top: 380px;
+    left: 1020px;
+    transform: rotate(0deg);
+  }
+}
+.car7 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: parkCar7;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier();
+  animation-fill-mode: forwards;
+  animation-delay: 14s;
+  top: 175px;
+  left: -100px;
+}
+
+.car7:hover .overlay {
+  opacity: 1;
+}
+
+@keyframes parkCar7 {
+  0% {
+    top: 175px;
+    left: 0;
+  }
+
+  45% {
+    top: 175px;
+    left: 880px;
+    transform: rotate(0deg);
+  }
+
+  55% {
+    transform: rotate(90deg);
+  }
+
+  70% {
+    top: 580px;
+    left: 880px;
+    transform: rotate(90deg);
+  }
+
+  80% {
+    top: 580px;
+    left: 880px;
+    transform: rotate(0deg);
+  } 
+
+  100% {
+    top: 580px;
+    left: 1020px;
+    transform: rotate(0deg);
+  }
+}
+
+
+
+.car8 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: parkCar8;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier();
+  animation-fill-mode: forwards;
+  animation-delay: 16s;
+  top: 175px;
+  left: -100px;
+}
+
+.car8:hover .overlay {
+  opacity: 1;
+}
+
+@keyframes parkCar8 {
+  0% {
+    top: 175px;
+    left: 0;
+  }
+
+  45% {
+    top: 175px;
+    left: 50px;
+    transform: rotate(0deg);
+  }
+
+  55% {
+    transform: rotate(90deg);
+  }
+
+  70% {
+    top: 380px;
+    left: 50px;
+    transform: rotate(90deg);
+  }
+
+  80% {
+    top: 380px;
+    left: 50px;
+    transform: rotate(0deg);
+  } 
+
+  100% {
+    top: 380px;
+    left: 200px;
+    transform: rotate(0deg);
+  }
+}
+
+.car9 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: parkCar9;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier();
+  animation-fill-mode: forwards;
+  animation-delay: 20s;
+  top: 175px;
+  left: -100px;
+}
+
+.car9:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  rotate: 180deg;
+}
+
+@keyframes parkCar9 {
+  0% {
+    top: 175px;
+    left: 0;
+  }
+
+  45% {
+    top: 175px;
+    left: 480px;
+    transform: rotate(0deg);
+  }
+
+  55% {
+    transform: rotate(90deg);
+  }
+
+  70% {
+    top: 340px;
+    left: 480px;
+    transform: rotate(90deg);
+  }
+
+  80% {
+    top: 340px;
+    left: 480px;
+    transform: rotate(180deg);
+  } 
+
+  100% {
+    top: 340px;
+    left: 320px;
+    transform: rotate(180deg);
+  }
+}
+
+.car10 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: parkCar10;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier();
+  animation-fill-mode: forwards;
+  animation-delay: 22s;
+  top: 175px;
+  left: -100px;
+}
+
+.car10:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  rotate: 90deg;
+}
+
+@keyframes parkCar10 {
+  0% {
+    top: 175px;
+    left: 0;
+  }
+
+  60% {
+    top: 175px;
+    left: 280px;
+    transform: rotate(0deg);
+  }
+
+  70% {
+    top: 175px;
+    left: 280px;
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    top: 60px;
+    left: 280px;
+    transform: rotate(-90deg);
+  }
+}
+
