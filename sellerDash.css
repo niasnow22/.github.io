@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+.cardsWrapper {
+  display: flex;
+  /*justify-content: space-evenly;*/
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffe4a1;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  margin: 30px;
+  text-align: center;
+}
+
+.card ul {
+  text-align: left;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.addSymbol {
+  font-size: 80px;
+}
